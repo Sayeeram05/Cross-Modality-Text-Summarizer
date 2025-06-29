@@ -1,0 +1,7 @@
+{
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "D:\\GitHub\\Cross Modality Text Summarizer\\GUI\\lib\\swing-jnafilechooser.jar"
+    ]
+}

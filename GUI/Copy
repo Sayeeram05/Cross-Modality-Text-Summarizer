@@ -1,0 +1,14 @@
+File homeDir = new File("C:\\Users\\SAYEERAM\\OneDrive\\Pictures");
+JFileChooser fileChooser = new JFileChooser(homeDir);
+FileNameExtensionFilter filter = new FileNameExtensionFilter("Image Files", "jpg", "png", "jpeg", "gif");
+
+fileChooser.setFileFilter(filter);
+
+int result = fileChooser.showOpenDialog(frame);
+
+if (result == JFileChooser.APPROVE_OPTION) {
+    File selectedFile = fileChooser.getSelectedFile();
+    System.out.println("Selected image: " + selectedFile.getAbsolutePath());
+} else {
+    System.out.println("No image selected.");
+}
